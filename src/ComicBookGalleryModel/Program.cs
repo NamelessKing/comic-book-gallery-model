@@ -20,7 +20,7 @@ namespace ComicBookGalleryModel
                     PublishedOn = DateTime.Today
                 });
 
-                //context.SaveChanges();
+                context.SaveChanges();
 
                 var comicBooks = context.ComicBooks.ToList();
 
