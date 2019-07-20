@@ -9,7 +9,14 @@ namespace ComicBookGalleryModel
     {
         static void Main(string[] args)
         {
-            Series series = new Series() { Title = "The Amazing Spide-Man" };
+            Series series1 = new Series() { Title = "The Amazing Spide-Man" };
+            Series series2 = new Series() { Title = "The Invincible Iron man" };
+
+            Artist artist1 = new Artist() { Name = "Stan Lee"};
+            Artist artist2 = new Artist() { Name = "Steve Ditko" };
+            Artist artist3 = new Artist() { Name = "Jack Kirby" };
+            
+
             using (var context = new Context())
             {
                 context.ComicBooks.Add(new ComicBook()
